@@ -1,0 +1,77 @@
+/* 
+  AUTHOR: ARUMDAWOCODE
+  Project: Responsive Two-Sided Page Using HTML5, CSS & Bootstrap4
+  Email Address: arumdawocode@gmail.com
+  Image: From F8 Lagos 2019
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left{
+    left: 0;
+    background: url('../images/1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.right{
+    right: 0;
+    background-color: #f4f7f6;
+}
+
+.centered{
+    position: absolute;
+    top: 26.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered button{
+    width: 100%;
+}
+
+@media (max-width: 700px){
+    .split {
+        width: 100%;
+    }
+}
+
+a{
+    color: black;
+}
+
+.welcome a:visited {
+    color: black;
+}
+
+.content-right{
+    right: 50%;
+    margin-top: 20px;
+}
+
+.content-left{
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -24px;
+}
+
+.form-control{
+    width: 100%;
+}
